@@ -6,8 +6,7 @@ namespace WorldTour
     {
         static void Main(string[] args)
         {
-            string lineStops = Console.ReadLine();
-                
+            string lineStops = Console.ReadLine();                
 
             while (true)
             {
@@ -23,9 +22,7 @@ namespace WorldTour
                 string comand = parts[0];
 
                 if (comand == "Add Stop")
-                {
-                    //Add Stop:{ index}:{ string}
-
+                {                   
                     int givenIdx = int.Parse(parts[1]);
                     string strToInsert = parts[2];
 
@@ -36,8 +33,7 @@ namespace WorldTour
                     }
                 }
                 else if (comand == "Remove Stop")
-                {
-                    // Remove Stop:{start_index}:{end_index} 
+                {                   
                     int startIdx = int.Parse(parts[1]);
                     int endIdx = int.Parse(parts[2]);
 
@@ -49,8 +45,7 @@ namespace WorldTour
                     }
                 }
                 else if (comand == "Switch")
-                {
-                    // Switch:{old_string}:{new_string} 
+                {                   
                     string oldStr = parts[1];
                     string newStr = parts[2];
 
